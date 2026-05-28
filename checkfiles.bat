@@ -6,7 +6,7 @@ color 0A
 cls
 echo.
 echo ====================================================================
-echo           REPARACION DEL SISTEMA - WINDOWS 11
+echo           REPARACION y MANTENIMIENTO DEL SISTEMA - WINDOWS
 echo ====================================================================
 echo.
 echo Selecciona una opcion:
