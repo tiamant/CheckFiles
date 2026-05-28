@@ -1,66 +1,71 @@
-🛠️ Windows 11 System Repair Tool
-Este script es una utilidad automatizada de línea de comandos diseñada para facilitar el mantenimiento preventivo y correctivo de sistemas Windows 11. Centraliza las herramientas nativas más potentes del sistema operativo para diagnosticar, reparar y optimizar el rendimiento sin necesidad de instalar software de terceros.
+¡Claro que sí! Podemos elevar el nivel visual del `README.md` utilizando bloques de código para resaltar la estructura, iconos para mejorar la legibilidad y tablas para organizar la información de forma mucho más profesional.
 
-📋 Tabla de Contenidos
-Características
+Aquí tienes una versión mejorada para tu GitHub:
 
-Descripción de Opciones
+---
 
-Requisitos
+# 🚀 Windows 11 System Repair Tool
 
-Cómo utilizarlo
+---
 
-🚀 Características
-Automatización inteligente: Detecta si el sistema necesita reparación antes de ejecutarla.
+## 💡 ¿Qué es esto?
 
-Reportes de estado: Proporciona un resumen claro tras cada operación.
+Este script es una utilidad de mantenimiento diseñada para automatizar las herramientas nativas de diagnóstico y reparación de **Windows 11**. Su objetivo es simplificar procesos complejos de mantenimiento para usuarios que buscan optimizar su sistema sin instalar software de terceros.
 
-Modo "Todo en Uno": Ejecución secuencial de todas las tareas para un mantenimiento completo.
+---
 
-Seguro y Nativo: Utiliza exclusivamente binarios de confianza de Microsoft (DISM, SFC, cleanmgr).
+## 🛠️ Funcionalidades Principales
 
-🔍 Descripción de Opciones
-[1] Diagnóstico y Reparación de Imagen (DISM)
-Utiliza la herramienta Deployment Image Servicing and Management para verificar el almacén de componentes de Windows.
+| Opción | Herramienta | Descripción Técnica |
+| --- | --- | --- |
+| **[1]** | **DISM** | Verifica y repara la imagen del sistema mediante los módulos `CheckHealth`, `ScanHealth` y `RestoreHealth`. |
+| **[2]** | **SFC** | Escaneo profundo del sistema (`sfc /scannow`) para restaurar archivos protegidos dañados o faltantes. |
+| **[3]** | **Cleanup** | Ejecuta `StartComponentCleanup` para eliminar paquetes de actualización obsoletos y reducir el uso de disco. |
+| **[4]** | **Disk Mgr** | Automatiza la limpieza de archivos temporales, caché y basura del sistema mediante `cleanmgr`. |
+| **[9]** | **All-in-One** | Ejecuta la secuencia completa de mantenimiento de forma automática. |
 
-CheckHealth: Realiza una verificación rápida de la imagen del sistema en busca de banderas de corrupción.
+---
 
-ScanHealth: Escanea profundamente la imagen y compara los archivos con la base de datos oficial de Microsoft.
+## 🚀 Guía de Uso
 
-RestoreHealth: Si se detecta corrupción, descarga y reemplaza automáticamente los archivos dañados desde los servidores de Windows Update.
+Para ejecutar el script correctamente, sigue estos pasos:
 
-[2] Verificación de Archivos del Sistema (SFC)
-Ejecuta el System File Checker (sfc /scannow).
+1. **Descarga:** Obtén el archivo `.bat` desde este repositorio.
+2. **Ejecución:** Haz clic derecho sobre el archivo y selecciona **"Ejecutar como administrador"**.
+> **Importante:** Se requieren permisos elevados para que los comandos de reparación puedan modificar archivos del sistema.
 
-Su función es escanear todos los archivos protegidos del sistema. Si encuentra archivos sobrescritos o corruptos, los restaura utilizando las copias en caché ubicadas en una carpeta comprimida en %WinDir%\System32\dllcache.
 
-[3] Limpieza de Componentes del Sistema
-Ejecuta /StartComponentCleanup a través de DISM.
+3. **Selección:** Elige una opción del menú interactivo.
 
-Esta opción elimina versiones antiguas de paquetes, actualizaciones y componentes de Windows que ya han sido reemplazados por parches más nuevos, liberando espacio valioso en la partición del sistema (C:\WinSxS).
+---
 
-[4] Limpieza de Disco (Disk Cleanup)
-Lanza cleanmgr /sagerun:1.
+## 🛡️ ¿Por qué usar este script?
 
-Automatiza la eliminación de archivos temporales, caché de navegadores, logs de errores, archivos de instalación antiguos y elementos en la papelera de reciclaje. Nota: Requiere que la configuración de limpieza esté pre-definida mediante el comando /sageset:1.
+```text
+╔════════════════════════════════════════════════════════════╗
+║                   VENTAJAS DE ESTE SCRIPT                  ║
+╠════════════════════════════════════════════════════════════╣
+║ ✅ Sin instalación de terceros (100% nativo)               ║
+║ ✅ Diagnóstico automático de integridad de imagen          ║
+║ ✅ Liberación de espacio mediante limpieza profunda        ║
+║ ✅ Reporte final de estado tras cada operación             ║
+╚════════════════════════════════════════════════════════════╝
 
-[9] Ejecutar TODO
-Ejecuta el flujo completo de mantenimiento en secuencia: DISM (Check/Scan/Restore) -> SFC -> Limpieza de Componentes -> Limpieza de Disco. Ideal para una puesta a punto integral del sistema.
+```
 
-⚙️ Requisitos
-Sistema Operativo: Windows 10 o Windows 11.
+---
 
-Privilegios: Es indispensable ejecutar el archivo .bat como Administrador para que los comandos de reparación tengan permisos de escritura en los archivos protegidos del sistema.
+## ⚠️ Consideraciones
 
-🛠️ Cómo utilizarlo
-Descarga el archivo .bat.
+* **Reinicio:** Se recomienda encarecidamente reiniciar el equipo tras ejecutar las opciones `[1]` o `[2]` para aplicar correctamente cualquier reparación de archivos críticos.
+* **Seguridad:** El script utiliza únicamente comandos oficiales de Microsoft, garantizando la integridad de tu sistema.
 
-Haz clic derecho sobre el archivo.
+---
 
-Selecciona "Ejecutar como administrador".
+*Desarrollado para quienes buscan eficiencia y control sobre su sistema Windows.*
 
-Sigue las instrucciones en pantalla desde el menú principal.
+---
 
-⚠️ Nota de seguridad: Se recomienda reiniciar el equipo siempre que el script finalice una reparación importante para asegurar que todos los archivos reemplazados se carguen correctamente al iniciar Windows.
+### ¿Qué te parece este formato?
 
-Desarrollado para optimizar el rendimiento y la estabilidad de Windows.
+He añadido una **tabla comparativa** y un **bloque de texto estilizado** para que la información técnica sea más digerible. ¿Te gustaría que agregue alguna sección adicional, como instrucciones para crear un atajo en el escritorio o cómo configurar el `cleanmgr` para que limpie rutas específicas?
