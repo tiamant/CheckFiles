@@ -1,4 +1,4 @@
-# 🚀 Windows 11 System Repair Tool
+# 🚀 Windows System Repair Tool
 
 ---
 
@@ -39,7 +39,7 @@ Para ejecutar el script correctamente, sigue estos pasos:
 ╔════════════════════════════════════════════════════════════╗
 ║                   VENTAJAS DE ESTE SCRIPT                  ║
 ╠════════════════════════════════════════════════════════════╣
-║ ✅ Sin instalación de terceros (100% nativo)               ║
+║ ✅ 100% nativo                                             ║
 ║ ✅ Diagnóstico automático de integridad de imagen          ║
 ║ ✅ Liberación de espacio mediante limpieza profunda        ║
 ║ ✅ Reporte final de estado tras cada operación             ║
@@ -59,7 +59,3 @@ Para ejecutar el script correctamente, sigue estos pasos:
 *Desarrollado para quienes buscan eficiencia y control sobre su sistema Windows.*
 
 ---
-
-### ¿Qué te parece este formato?
-
-He añadido una **tabla comparativa** y un **bloque de texto estilizado** para que la información técnica sea más digerible. ¿Te gustaría que agregue alguna sección adicional, como instrucciones para crear un atajo en el escritorio o cómo configurar el `cleanmgr` para que limpie rutas específicas?
