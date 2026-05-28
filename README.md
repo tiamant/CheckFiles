@@ -26,9 +26,6 @@ Para ejecutar el script correctamente, sigue estos pasos:
 
 1. **Descarga:** Obtén el archivo `.bat` desde este repositorio.
 2. **Ejecución:** Haz clic derecho sobre el archivo y selecciona **"Ejecutar como administrador"**.
-> **Importante:** Se requieren permisos elevados para que los comandos de reparación puedan modificar archivos del sistema.
-
-
 3. **Selección:** Elige una opción del menú interactivo.
 
 ---
