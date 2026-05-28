@@ -12,25 +12,25 @@ echo.
 echo Selecciona una opcion:
 echo.
 echo [1] Diagnostico y Reparacion de Imagen (DISM)
-echo     └─ Verifica y repara automaticamente la integridad del sistema
+echo     --> Verifica y repara automaticamente la integridad del sistema
 echo        1. CheckHealth: diagnostica el estado
 echo        2. ScanHealth: busca problemas (si los hay, ejecuta RestoreHealth)
 echo        3. RestoreHealth: repara los archivos corruptos encontrados
 echo.
 echo [2] Verificacion de Archivos del Sistema (SFC)
-echo     └─ Escanea todos los archivos del sistema en busca de corrupcion
+echo     --> Escanea todos los archivos del sistema en busca de corrupcion
 echo        y los repara automaticamente.
 echo.
 echo [3] Limpieza de Componentes del Sistema
-echo     └─ Elimina versiones antiguas de componentes Windows para liberar
+echo     --> Elimina versiones antiguas de componentes Windows para liberar
 echo        espacio en disco y mejorar el rendimiento
 echo.
 echo [4] Limpieza de Disco (Disk Cleanup)
-echo     └─ Elimina archivos temporales, caché y descargas innecesarias
+echo     --> Elimina archivos temporales, cache y descargas innecesarias
 echo        para liberar espacio en disco
 echo.
 echo [9] Ejecutar TODO
-echo     └─ Ejecuta TODAS las reparaciones en secuencia
+echo     --> Ejecuta TODAS las reparaciones en secuencia
 echo.
 echo [0] Salir
 echo.
@@ -174,7 +174,7 @@ echo ====================================================================
 echo Ejecutando Limpieza de Disco (Disk Cleanup)
 echo ====================================================================
 echo.
-echo Esto eliminara archivos temporales, caché de navegador, descargas
+echo Esto eliminara archivos temporales, cache de navegador, descargas
 echo y otros archivos innecesarios para liberar espacio.
 echo.
 cleanmgr /sagerun:1
@@ -206,7 +206,7 @@ set "CLEANUP_OK=0"
 set "CLEANMGR_OK=0"
 
 echo.
-set /p confirmar=¿Ejecutar TODAS las reparaciones? (S/N): 
+set /p confirmar=Ejecutar TODAS las reparaciones? (S/N): 
 if /i not "%confirmar%"=="S" (
     goto :MENU
 )
