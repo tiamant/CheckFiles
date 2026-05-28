@@ -36,7 +36,6 @@ Para ejecutar el script correctamente, sigue estos pasos:
 ╔════════════════════════════════════════════════════════════╗
 ║                   VENTAJAS DE ESTE SCRIPT                  ║
 ╠════════════════════════════════════════════════════════════╣
-║ ✅ 100% nativo                                             ║
 ║ ✅ Diagnóstico automático de integridad de imagen          ║
 ║ ✅ Liberación de espacio mediante limpieza profunda        ║
 ║ ✅ Reporte final de estado tras cada operación             ║
@@ -49,7 +48,7 @@ Para ejecutar el script correctamente, sigue estos pasos:
 ## ⚠️ Consideraciones
 
 * **Reinicio:** Se recomienda encarecidamente reiniciar el equipo tras ejecutar las opciones `[1]` o `[2]` para aplicar correctamente cualquier reparación de archivos críticos.
-* **Seguridad:** El script utiliza únicamente comandos oficiales de Microsoft, garantizando la integridad de tu sistema.
+* **Seguridad:** El script utiliza únicamente comandos oficiales de Microsoft, esto solo los integra en un solo script para comodidad.
 
 ---
 
